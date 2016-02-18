@@ -147,7 +147,9 @@
 
 - (BOOL)finish
 {
-	return [self finishUntilPresentationTimeStamp:kCMTimeIndefinite];
+	BOOL result = [self finishUntilPresentationTimeStamp:kCMTimeIndefinite];
+	VTCompressionSessionInvalidate(compressionSession);
+	return result;
 }
 
 - (BOOL)finishUntilPresentationTimeStamp:(CMTime)presentationTimeStamp

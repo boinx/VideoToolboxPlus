@@ -199,6 +199,24 @@ static void VideoCompressonOutputCallback(void *VTref, void *VTFrameRef, OSStatu
 	//	pixelBuffer = NULL;
 	
 	VTPCompressionSession *compressionSession = (__bridge VTPCompressionSession *)VTref;
+
+	if(status < 0 || sampleBuffer == nil)
+	{
+		// e.g. we received kVTVideoEncoderMalfunctionErr = -12912 and a nil sample buffer, this leads to a crash
+		NSLog(@"ERROR %s:%d OSStatus Error = %d", __FUNCTION__, __LINE__, status);
+
+		id<VTPCompressionSessionDelegate> delegate = compressionSession.delegate;
+		dispatch_queue_t delegateQueue = compressionSession.delegateQueue;
+
+		if([delegate respondsToSelector:@selector(videoCompressionSession:didSendError:)])
+		{
+			dispatch_async(delegateQueue, ^{
+				[delegate videoCompressionSession:compressionSession didSendError:[NSError errorWithDomain:@"VideoCompressonSession" code:status userInfo:nil]];
+			});
+		}
+		return;
+	}
+	
 	[compressionSession encodePixelBufferCallbackWithSampleBuffer:sampleBuffer infoFlags:infoFlags];
 }
 

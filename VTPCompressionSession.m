@@ -86,7 +86,7 @@
 		}
 		else
 		{
-			NSLog(@"%s:%d: %@", __FUNCTION__, __LINE__, error);
+			NSLog(@"%s:%d: Reading property '%@' causes an error: %@", __FUNCTION__, __LINE__, property, error);
 		}
 		
 		return nil;
@@ -107,7 +107,7 @@
 		}
 		else
 		{
-			NSLog(@"%s:%d: %@", __FUNCTION__, __LINE__, error);
+			NSLog(@"%s:%d: Setting property '%@' with value '%@' causes an error: %@", __FUNCTION__, __LINE__, property, value, error);
 		}
 		
 		return NO;

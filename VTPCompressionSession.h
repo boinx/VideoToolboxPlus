@@ -12,6 +12,7 @@
 @optional
 
 - (void)videoCompressionSession:(VTPCompressionSession *)compressionSession didDropSampleBuffer:(CMSampleBufferRef)sampleBuffer;
+- (void)videoCompressionSession:(VTPCompressionSession *)compressionSession didSendError:(NSError*)error;
 
 @end
 

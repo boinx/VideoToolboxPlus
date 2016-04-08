@@ -26,11 +26,16 @@
 
 - (instancetype)initWithWidth:(NSInteger)width height:(NSInteger)height codec:(CMVideoCodecType)codec error:(NSError **)outError
 {
+	return [self initWithWidth:width height:height codec:codec hardwareEncoder:YES error:outError];
+}
+
+- (instancetype)initWithWidth:(NSInteger)width height:(NSInteger)height codec:(CMVideoCodecType)codec hardwareEncoder:(BOOL)hwEncoder error:(NSError **)outError
+{
 	self = [super init];
 	if(self != nil)
 	{
 		NSDictionary *encoderSpecification = @{
-			(__bridge NSString *)kVTVideoEncoderSpecification_EnableHardwareAcceleratedVideoEncoder: @YES
+			(__bridge NSString *)kVTVideoEncoderSpecification_EnableHardwareAcceleratedVideoEncoder: @(hwEncoder)
 		};
 
 		OSStatus status = VTCompressionSessionCreate(NULL, (int32_t)width, (int32_t)height, codec, (__bridge CFDictionaryRef)encoderSpecification, NULL, NULL, VideoCompressonOutputCallback, (__bridge void *)self, &compressionSession);

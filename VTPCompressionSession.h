@@ -20,7 +20,10 @@
 
 + (BOOL)hasHardwareSupportForCodec:(CMVideoCodecType)codec;
 
+//automatically uses a hardware encoder if available
 - (instancetype)initWithWidth:(NSInteger)width height:(NSInteger)height codec:(CMVideoCodecType)codec error:(NSError **)error;
+
+- (instancetype)initWithWidth:(NSInteger)width height:(NSInteger)height codec:(CMVideoCodecType)codec hardwareEncoder:(BOOL)hwEncoder error:(NSError **)outError;
 
 @property (nonatomic, weak, readonly) id<VTPCompressionSessionDelegate> delegate;
 @property (nonatomic, strong, readonly) dispatch_queue_t delegateQueue;

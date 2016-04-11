@@ -3,11 +3,18 @@
 
 @implementation VTPCompressionSession (PropertiesFromDictionary)
 
-- (void)setPropertiesFromDictionary:(NSDictionary *)dictionary error:(NSError **)error
+- (void)setPropertiesFromDictionary:(NSDictionary *)dictionary error:(NSError **)outError
 {
+	__block NSError *error = nil;
 	[dictionary enumerateKeysAndObjectsUsingBlock:^(id property, id value, BOOL *stop) {
-		[self setValue:value forProperty:property error:error];
+		__autoreleasing NSError *childError;
+		[self setValue:value forProperty:property error:&childError];
+		if (!error)
+		{
+			error = childError;
+		}
 	}];
+	*outError = error;
 }
 
 @end

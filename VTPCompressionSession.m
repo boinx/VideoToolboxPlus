@@ -35,7 +35,9 @@
 	if(self != nil)
 	{
 		NSDictionary *encoderSpecification = @{
+#if TARGET_OS_IPHONE == 0
 			(__bridge NSString *)kVTVideoEncoderSpecification_EnableHardwareAcceleratedVideoEncoder: @(hwEncoder)
+#endif
 		};
 
 		OSStatus status = VTCompressionSessionCreate(NULL, (int32_t)width, (int32_t)height, codec, (__bridge CFDictionaryRef)encoderSpecification, NULL, NULL, VideoCompressonOutputCallback, (__bridge void *)self, &compressionSession);

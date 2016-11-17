@@ -133,7 +133,11 @@
 
 - (BOOL)usingHardwareAcceleratedVideoEncoder
 {
+#if TARGET_OS_IPHONE == 0
 	NSNumber *value = [self valueForProperty:(__bridge NSString *)kVTCompressionPropertyKey_UsingHardwareAcceleratedVideoEncoder error:nil];
+#else
+	NSNumber *value = @YES;
+#endif
 	return value.boolValue;
 }
 

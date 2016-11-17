@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "AE0FA47E9222D49755C6ACFE965ECA96A6AB6161",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "500BCDBBD50C68FB5D1D8B57E65C222CA01797F6" : 9223372036854775807,
+    "AE0FA47E9222D49755C6ACFE965ECA96A6AB6161" : 9223372036854775807,
+    "7E174E69F43F7D6C8183AC07954467E9467DE13C" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "472742F7-1887-43CC-944B-16ECAAB1ADB4",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "500BCDBBD50C68FB5D1D8B57E65C222CA01797F6" : "..\/..",
+    "AE0FA47E9222D49755C6ACFE965ECA96A6AB6161" : "VideoToolboxPlus\/",
+    "7E174E69F43F7D6C8183AC07954467E9467DE13C" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "VideoToolboxPlus-iOS",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "VideoToolboxPlus-iOS.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git.assembla.com:mimolive-reporter.2.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "500BCDBBD50C68FB5D1D8B57E65C222CA01797F6"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git.assembla.com:boinxtv.bxmo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7E174E69F43F7D6C8183AC07954467E9467DE13C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/boinx\/VideoToolboxPlus.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AE0FA47E9222D49755C6ACFE965ECA96A6AB6161"
+    }
+  ]
+}

@@ -40,7 +40,7 @@
 #endif
 		};
 
-		OSStatus status = VTCompressionSessionCreate(NULL, (int32_t)width, (int32_t)height, codec, (__bridge CFDictionaryRef)encoderSpecification, NULL, NULL, VideoCompressonOutputCallback, (__bridge void *)self, &compressionSession);
+		OSStatus status = VTCompressionSessionCreate(NULL, (int32_t)width, (int32_t)height, codec, (__bridge CFDictionaryRef)encoderSpecification, NULL, NULL, VideoCompressionOutputCallback, (__bridge void *)self, &compressionSession);
 		if(status != noErr)
 		{
 			NSError *error = [NSError videoToolboxErrorWithStatus:status];
@@ -150,6 +150,9 @@
 	}
 	
 	OSStatus status = VTCompressionSessionEncodeFrame(compressionSession, pixelBuffer, presentationTimeStamp, duration, (__bridge CFDictionaryRef)properties, pixelBuffer, NULL);
+	if (status) {
+		NSLog(@"ERROR %s:%d OSStatus Error = %d", __FUNCTION__, __LINE__, status);
+	}
 	
 	return status == noErr;
 }
@@ -199,7 +202,7 @@
 	}
 }
 
-static void VideoCompressonOutputCallback(void *VTref, void *VTFrameRef, OSStatus status, VTEncodeInfoFlags infoFlags, CMSampleBufferRef sampleBuffer)
+static void VideoCompressionOutputCallback(void *VTref, void *VTFrameRef, OSStatus status, VTEncodeInfoFlags infoFlags, CMSampleBufferRef sampleBuffer)
 {
 	//	CVPixelBufferRef pixelBuffer = (CVPixelBufferRef)VTFrameRef;
 	//	CVPixelBufferRelease(pixelBuffer); // see encodeFrame:

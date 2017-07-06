@@ -34,7 +34,7 @@
 - (id)valueForProperty:(NSString *)property error:(NSError **)outError;
 - (BOOL)setValue:(id)value forProperty:(NSString *)property error:(NSError **)outError;
 
-- (void)prepare;
+- (OSStatus)prepare;
 
 - (BOOL)encodeSampleBuffer:(CMSampleBufferRef)sampleBuffer forceKeyframe:(BOOL)forceKeyframe;
 - (BOOL)encodePixelBuffer:(CVPixelBufferRef)pixelBuffer presentationTimeStamp:(CMTime)presentationTimeStamp duration:(CMTime)duration forceKeyframe:(BOOL)forceKeyframe;

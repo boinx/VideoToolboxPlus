@@ -123,9 +123,17 @@
 	return YES;
 }
 
-- (void)prepare
+- (OSStatus)prepare
 {
-	VTCompressionSessionPrepareToEncodeFrames(compressionSession);
+	if(compressionSession)
+	{
+		return VTCompressionSessionPrepareToEncodeFrames(compressionSession);
+	}
+	else
+	{
+		NSLog(@"%s:%d: Error: Can't prepare video compression session because compressionSession is nil.", __FUNCTION__, __LINE__);
+		return kCVReturnInvalidArgument;
+	}
 }
 
 - (BOOL)encodeSampleBuffer:(CMSampleBufferRef)sampleBuffer forceKeyframe:(BOOL)forceKeyframe

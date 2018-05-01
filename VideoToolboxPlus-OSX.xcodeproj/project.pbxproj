@@ -143,10 +143,10 @@
 		509D91F518DF930800FC9A7A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = McZonk;
 			};
-			buildConfigurationList = 509D91F818DF930800FC9A7A /* Build configuration list for PBXProject "VideoToolboxPlus" */;
+			buildConfigurationList = 509D91F818DF930800FC9A7A /* Build configuration list for PBXProject "VideoToolboxPlus-OSX" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -270,7 +270,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		509D91F818DF930800FC9A7A /* Build configuration list for PBXProject "VideoToolboxPlus" */ = {
+		509D91F818DF930800FC9A7A /* Build configuration list for PBXProject "VideoToolboxPlus-OSX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				509D921F18DF930800FC9A7A /* Debug */,

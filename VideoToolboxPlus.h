@@ -3,7 +3,7 @@
 //  VideoToolboxPlus
 //
 //  Created by Stefan Fochler on 06.06.18.
-//  Copyright © 2018 McZonk. All rights reserved.
+//  Copyright © 2018 Boinx Software Ltd. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

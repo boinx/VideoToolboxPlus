@@ -7,26 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5076C75E18E1F34A00844EBC /* VideoToolboxPlus.h in Headers */ = {isa = PBXBuildFile; fileRef = 5076C75C18E1F34A00844EBC /* VideoToolboxPlus.h */; };
-		5076C76318E1F37000844EBC /* NSError+VTPError.h in Headers */ = {isa = PBXBuildFile; fileRef = 5076C75F18E1F37000844EBC /* NSError+VTPError.h */; };
-		5076C76418E1F37000844EBC /* NSError+VTPError.m in Sources */ = {isa = PBXBuildFile; fileRef = 5076C76018E1F37000844EBC /* NSError+VTPError.m */; };
-		5076C76518E1F37000844EBC /* VTPCompressionSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 5076C76118E1F37000844EBC /* VTPCompressionSession.h */; };
-		5076C76618E1F37000844EBC /* VTPCompressionSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 5076C76218E1F37000844EBC /* VTPCompressionSession.m */; };
-		5076C76918E1F4C100844EBC /* VTPCompressionSession+Properties.h in Headers */ = {isa = PBXBuildFile; fileRef = 5076C76718E1F4C100844EBC /* VTPCompressionSession+Properties.h */; };
-		5076C76A18E1F4C100844EBC /* VTPCompressionSession+Properties.m in Sources */ = {isa = PBXBuildFile; fileRef = 5076C76818E1F4C100844EBC /* VTPCompressionSession+Properties.m */; };
-		50FD861C1A3F497500D804AC /* VTPCompressionSession+PropertiesFromDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 50FD861A1A3F497500D804AC /* VTPCompressionSession+PropertiesFromDictionary.h */; };
-		50FD861D1A3F497500D804AC /* VTPCompressionSession+PropertiesFromDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD861B1A3F497500D804AC /* VTPCompressionSession+PropertiesFromDictionary.m */; };
+		481C258720C7D95700A20EEF /* VideoToolboxPlus.h in Headers */ = {isa = PBXBuildFile; fileRef = 481C258520C7D95700A20EEF /* VideoToolboxPlus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		481C258B20C7D95F00A20EEF /* NSError+VTPError.h in Headers */ = {isa = PBXBuildFile; fileRef = 5076C75F18E1F37000844EBC /* NSError+VTPError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		481C258C20C7D96000A20EEF /* VTPCompressionSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 5076C76118E1F37000844EBC /* VTPCompressionSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		481C258D20C7D96300A20EEF /* VTPCompressionSession+Properties.h in Headers */ = {isa = PBXBuildFile; fileRef = 5076C76718E1F4C100844EBC /* VTPCompressionSession+Properties.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		481C258E20C7D96400A20EEF /* VTPCompressionSession+PropertiesFromDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 50FD861A1A3F497500D804AC /* VTPCompressionSession+PropertiesFromDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		481C259720C7DFF100A20EEF /* NSError+VTPError.m in Sources */ = {isa = PBXBuildFile; fileRef = 5076C76018E1F37000844EBC /* NSError+VTPError.m */; };
+		481C259820C7DFF100A20EEF /* VTPCompressionSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 5076C76218E1F37000844EBC /* VTPCompressionSession.m */; };
+		481C259920C7DFF100A20EEF /* VTPCompressionSession+Properties.m in Sources */ = {isa = PBXBuildFile; fileRef = 5076C76818E1F4C100844EBC /* VTPCompressionSession+Properties.m */; };
+		481C259A20C7DFF100A20EEF /* VTPCompressionSession+PropertiesFromDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD861B1A3F497500D804AC /* VTPCompressionSession+PropertiesFromDictionary.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5076C75C18E1F34A00844EBC /* VideoToolboxPlus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoToolboxPlus.h; sourceTree = "<group>"; };
+		481C258320C7D95700A20EEF /* VideoToolboxPlus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VideoToolboxPlus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		481C258520C7D95700A20EEF /* VideoToolboxPlus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoToolboxPlus.h; sourceTree = "<group>"; };
+		481C258620C7D95700A20EEF /* Info_template.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info_template.plist; sourceTree = "<group>"; };
 		5076C75F18E1F37000844EBC /* NSError+VTPError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+VTPError.h"; sourceTree = "<group>"; };
 		5076C76018E1F37000844EBC /* NSError+VTPError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+VTPError.m"; sourceTree = "<group>"; };
 		5076C76118E1F37000844EBC /* VTPCompressionSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTPCompressionSession.h; sourceTree = "<group>"; };
 		5076C76218E1F37000844EBC /* VTPCompressionSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTPCompressionSession.m; sourceTree = "<group>"; };
 		5076C76718E1F4C100844EBC /* VTPCompressionSession+Properties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VTPCompressionSession+Properties.h"; sourceTree = "<group>"; };
 		5076C76818E1F4C100844EBC /* VTPCompressionSession+Properties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "VTPCompressionSession+Properties.m"; sourceTree = "<group>"; };
-		509D91FD18DF930800FC9A7A /* libVideoToolboxPlus.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libVideoToolboxPlus.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		509D920018DF930800FC9A7A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		509D920318DF930800FC9A7A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		509D920418DF930800FC9A7A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -37,7 +38,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		509D91FA18DF930800FC9A7A /* Frameworks */ = {
+		481C257F20C7D95700A20EEF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -50,7 +51,8 @@
 		5076C75A18E1F34100844EBC /* VideoToolboxPlus */ = {
 			isa = PBXGroup;
 			children = (
-				5076C75C18E1F34A00844EBC /* VideoToolboxPlus.h */,
+				481C258520C7D95700A20EEF /* VideoToolboxPlus.h */,
+				481C258620C7D95700A20EEF /* Info_template.plist */,
 				5076C75F18E1F37000844EBC /* NSError+VTPError.h */,
 				5076C76018E1F37000844EBC /* NSError+VTPError.m */,
 				5076C76118E1F37000844EBC /* VTPCompressionSession.h */,
@@ -75,7 +77,7 @@
 		509D91FE18DF930800FC9A7A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				509D91FD18DF930800FC9A7A /* libVideoToolboxPlus.a */,
+				481C258320C7D95700A20EEF /* VideoToolboxPlus.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,28 +105,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		509D91FB18DF930800FC9A7A /* Headers */ = {
+		481C258020C7D95700A20EEF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5076C75E18E1F34A00844EBC /* VideoToolboxPlus.h in Headers */,
-				5076C76518E1F37000844EBC /* VTPCompressionSession.h in Headers */,
-				5076C76918E1F4C100844EBC /* VTPCompressionSession+Properties.h in Headers */,
-				50FD861C1A3F497500D804AC /* VTPCompressionSession+PropertiesFromDictionary.h in Headers */,
-				5076C76318E1F37000844EBC /* NSError+VTPError.h in Headers */,
+				481C258720C7D95700A20EEF /* VideoToolboxPlus.h in Headers */,
+				481C258B20C7D95F00A20EEF /* NSError+VTPError.h in Headers */,
+				481C258C20C7D96000A20EEF /* VTPCompressionSession.h in Headers */,
+				481C258D20C7D96300A20EEF /* VTPCompressionSession+Properties.h in Headers */,
+				481C258E20C7D96400A20EEF /* VTPCompressionSession+PropertiesFromDictionary.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		509D91FC18DF930800FC9A7A /* VideoToolboxPlus */ = {
+		481C258220C7D95700A20EEF /* VideoToolboxPlus */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 509D922118DF930800FC9A7A /* Build configuration list for PBXNativeTarget "VideoToolboxPlus" */;
+			buildConfigurationList = 481C258820C7D95700A20EEF /* Build configuration list for PBXNativeTarget "VideoToolboxPlus" */;
 			buildPhases = (
-				509D91F918DF930800FC9A7A /* Sources */,
-				509D91FA18DF930800FC9A7A /* Frameworks */,
-				509D91FB18DF930800FC9A7A /* Headers */,
+				481C257E20C7D95700A20EEF /* Sources */,
+				481C257F20C7D95700A20EEF /* Frameworks */,
+				481C258020C7D95700A20EEF /* Headers */,
+				481C258120C7D95700A20EEF /* Resources */,
 			);
 			buildRules = (
 			);
@@ -132,8 +135,8 @@
 			);
 			name = VideoToolboxPlus;
 			productName = VideoToolboxPlus;
-			productReference = 509D91FD18DF930800FC9A7A /* libVideoToolboxPlus.a */;
-			productType = "com.apple.product-type.library.static";
+			productReference = 481C258320C7D95700A20EEF /* VideoToolboxPlus.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -142,7 +145,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0940;
-				ORGANIZATIONNAME = McZonk;
+				ORGANIZATIONNAME = "Boinx Software Ltd.";
+				TargetAttributes = {
+					481C258220C7D95700A20EEF = {
+						CreatedOnToolsVersion = 9.4;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = 509D91F818DF930800FC9A7A /* Build configuration list for PBXProject "VideoToolboxPlus-OSX" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -156,26 +165,128 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				509D91FC18DF930800FC9A7A /* VideoToolboxPlus */,
+				481C258220C7D95700A20EEF /* VideoToolboxPlus */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		481C258120C7D95700A20EEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		509D91F918DF930800FC9A7A /* Sources */ = {
+		481C257E20C7D95700A20EEF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5076C76618E1F37000844EBC /* VTPCompressionSession.m in Sources */,
-				50FD861D1A3F497500D804AC /* VTPCompressionSession+PropertiesFromDictionary.m in Sources */,
-				5076C76A18E1F4C100844EBC /* VTPCompressionSession+Properties.m in Sources */,
-				5076C76418E1F37000844EBC /* NSError+VTPError.m in Sources */,
+				481C259720C7DFF100A20EEF /* NSError+VTPError.m in Sources */,
+				481C259820C7DFF100A20EEF /* VTPCompressionSession.m in Sources */,
+				481C259920C7DFF100A20EEF /* VTPCompressionSession+Properties.m in Sources */,
+				481C259A20C7DFF100A20EEF /* VTPCompressionSession+PropertiesFromDictionary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		481C258920C7D95700A20EEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = Info_template.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.boinx.VideoToolboxPlus;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		481C258A20C7D95700A20EEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = Info_template.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.boinx.VideoToolboxPlus;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		509D921F18DF930800FC9A7A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -249,39 +360,23 @@
 			};
 			name = Release;
 		};
-		509D922218DF930800FC9A7A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		509D922318DF930800FC9A7A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		481C258820C7D95700A20EEF /* Build configuration list for PBXNativeTarget "VideoToolboxPlus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				481C258920C7D95700A20EEF /* Debug */,
+				481C258A20C7D95700A20EEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		509D91F818DF930800FC9A7A /* Build configuration list for PBXProject "VideoToolboxPlus-OSX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				509D921F18DF930800FC9A7A /* Debug */,
 				509D922018DF930800FC9A7A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		509D922118DF930800FC9A7A /* Build configuration list for PBXNativeTarget "VideoToolboxPlus" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				509D922218DF930800FC9A7A /* Debug */,
-				509D922318DF930800FC9A7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

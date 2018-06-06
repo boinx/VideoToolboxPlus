@@ -14,7 +14,6 @@
 		5076C76618E1F37000844EBC /* VTPCompressionSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 5076C76218E1F37000844EBC /* VTPCompressionSession.m */; };
 		5076C76918E1F4C100844EBC /* VTPCompressionSession+Properties.h in Headers */ = {isa = PBXBuildFile; fileRef = 5076C76718E1F4C100844EBC /* VTPCompressionSession+Properties.h */; };
 		5076C76A18E1F4C100844EBC /* VTPCompressionSession+Properties.m in Sources */ = {isa = PBXBuildFile; fileRef = 5076C76818E1F4C100844EBC /* VTPCompressionSession+Properties.m */; };
-		509D920118DF930800FC9A7A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 509D920018DF930800FC9A7A /* Cocoa.framework */; };
 		50FD861C1A3F497500D804AC /* VTPCompressionSession+PropertiesFromDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 50FD861A1A3F497500D804AC /* VTPCompressionSession+PropertiesFromDictionary.h */; };
 		50FD861D1A3F497500D804AC /* VTPCompressionSession+PropertiesFromDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD861B1A3F497500D804AC /* VTPCompressionSession+PropertiesFromDictionary.m */; };
 /* End PBXBuildFile section */
@@ -42,7 +41,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				509D920118DF930800FC9A7A /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
